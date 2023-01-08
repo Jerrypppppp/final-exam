@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LazyLa 商城</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="shop,lazyla,蝦皮商城,賣場">
+<meta name="description" content="這是我的(打開)'專題網站'，主題就是賣東西的網站，只是我還不會後端，所以目前只有展示商品的功能">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<script src="https://kit.fontawesome.com/52659bfd4a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="myPage">
+
+
+<!-- 選取bar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#myPage" class="w3-bar-item w3-button w3-blue-gray"><img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/01.png" alt="Logo" style="width:40px;"></i>LazyLa</a>
+  
+  <a href="#work1" class="w3-bar-item w3-button w3-hide-small w3-hover-white">周邊玩偶</a>
+  <a href="#work2" class="w3-bar-item w3-button w3-hide-small w3-hover-white">手機殼</a>
+  <a href="#work3" class="w3-bar-item w3-button w3-hide-small w3-hover-white">機械鍵盤</a>
+  
+  
+    <div class="w3-dropdown-hover w3-hide-small w3-right">
+        <button class="w3-button" title="Notifications"><i class="fa fa-bars"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+        <a href="#work1" class="w3-bar-item w3-button w3-hide-small w3-left-align">周邊玩偶</a>
+        <a href="#work2" class="w3-bar-item w3-button w3-hide-small w3-left-align">手機殼</a>
+        <a href="#work3" class="w3-bar-item w3-button w3-hide-small w3-left-align">機械鍵盤</a>
+        <a href="https://shopee.tw/yami0206?smtt=0.31632194-1667908755.9" class="w3-bar-item w3-button w3-hide-small w3-left-align">蝦皮商城</a>
+        
+        </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small w3-right">
+        <button class="w3-button" title="Notifications"  onclick="document.getElementById('kartModal').style.display='block'" >
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>     
+        
+    </div>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#work1" class="w3-bar-item w3-button">周邊玩偶</a>
+    <a href="#work2" class="w3-bar-item w3-button">手機殼</a>
+    <a href="#work3" class="w3-bar-item w3-button">機械鍵盤</a>
+    <a href="https://shopee.tw/yami0206?smtt=0.31632194-1667908755.9" class="w3-bar-item w3-button">蝦皮商城</a>
+  </div>
+</div>
+
+<!-- 看板 -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/02.png" alt="board" style="width:100%;min-height:250px;max-height:500px;">
+</div>
+
+
+<!-- 商品列1-->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1 w3-bottombar w3-border-dark-gray" id="work1">
+
+<div class="w3-quarter">
+<h2>周邊玩偶</h2>
+</div>
+
+<!-- w3-quarter -->
+<!--商品資訊卡-->
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/03.jpg" style="width:100%;height:350px">
+  <div class="w3-container w3-center w3-blue-gray">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">轟焦凍<i class="fa-solid fa-circle-info"></i></button>
+  </div>
+  </div>
+</div>
+<!-- <button class="w3-button w3-xlarge  w3-hover-dark-gray ">轟焦凍<i class="fa-solid fa-circle-info"></i></button> -->
+
+<!-- 購物車彈跳視窗 -->
+<div id="kartModal" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-blue-gray w3-display-container"> 
+        <span onclick="document.getElementById('kartModal').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>購物車彈跳視窗</h4>
+      </header>
+      <div class="container flex-column">
+        <div class="header">
+            <div class=" position-relative">
+
+                <h1 class="text-center bg-dark text-bg-danger">購物車範例</h1>
+                <a href="/" class="d-flex position-absolute top-0 end-0 h-100 btn text-white flex-column justify-content-center">
+
+                    <i class="fa-solid fa-house-chimney"></i>
+                </a>
+            </div>
+            <div class="add_area">
+                <input type="text" placeholder="商品名稱" id="item_name">
+                <input type="number" placeholder="單價" class="text-end" id="item_price" min="0">
+                <button class="btn btn-primary" id="add_btn">新增</button>
+            </div>
+        </div>
+        <div>
+            <table class="table" id="my_table">
+                <thead class=" bg-dark text-bg-danger">
+                    <tr>
+                        <th>功能</th>
+                        <th>商品名稱</th>
+                        <th>數量</th>
+                        <th>單價</th>
+                        <th>小計</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sum_total">總計: <span id="sum_total_span">0</span></td>
+
+                    </tr>
+                </tfoot>
+                </table>
+            </table>
+        </div>
+    </div>
+      <footer class="w3-container w3-blue-gray">
+        <p>価格：800円(税抜)</p>
+    </footer>
+    </div>
+  </div>
+  <script>
+    const itemHtml = (name, amount,price)=>{
+        let optionHtml = ""
+        for(let i = 2;i< 31;i++){
+            optionHtml += `<option value="${i}">${i}</option>`
+        }
+        return `
+            <tr>
+                <td class="item_func"><button class="btn btn-danger" onclick="deleteBtnClick(this)">刪</button></td>
+                <td class="item_name">${name}</td>
+                <td class="item_amount p-0 pb-0">
+                    <select onchange="changeSelector(this)" class="form-select" aria-label="Default select example">
+                        <option selected value="1">1</option>
+                        ${optionHtml}
+                    </select>
+                </td>
+                <td class="item_price">${price}</td>
+                <td class="item_total">${price*amount}</td>
+
+            </tr>
+        `
+    }
+    const sumTotalRefresh = ()=>{
+        let sum = 0
+        let obj = $("#my_table").find("tbody").children("tr")
+        $(obj).each(function(i,v){
+            sum += parseInt($(v).find(".item_total").html())
+        });
+        $("#sum_total_span").html(sum);
+    }
+
+    const deleteBtnClick = (obj) => {
+        if(confirm("是否確認刪除")){
+
+            $(obj).parents("tr").remove();
+            sumTotalRefresh()    
+        }
+        
+    }
+    const changeSelector = (obj) => {
+        let now_item = $(obj).parents("tr")
+        let item_price = $(now_item).children(".item_price").html();
+        let item_amount = $(now_item).children(".item_amount").children("select").val();
+        $(now_item).children(".item_total").html(item_amount*item_price);
+        sumTotalRefresh()
+    }
+    const addItem = (itemHtml)=>{
+        $("#my_table tbody").append(itemHtml);
+        sumTotalRefresh()
+    }
+    function addItemToKart(name,price){
+        // debugger
+        let item_name = name
+        let item_price = price
+        if (item_name.value == "" || item_price.value == "") {
+            alert("請輸入商品名稱或單價");
+            return;
+        }
+        addItem(itemHtml(item_name,1,item_price))
+        item_name.value = "";
+        item_price.value = "";
+    }
+    $(document).ready(function () {
+        $("#add_btn").click(function (e) { 
+            e.preventDefault();
+            addItemToKart(document.getElementById("item_name"),document.getElementById("item_price"));
+        });
+        $("#asdffdsa").click(function (e) { 
+            e.preventDefault();
+            console.log($(this).html())
+        });
+    });
+</script>
+
+  <!--商品資訊彈出窗-->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-blue-gray w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>我的英雄學院 / 風和語林 2 風鈴木</h4>
+    </header>
+    <div class="w3-container w3-gray">
+      <p>商品尺寸：約H90 x W80 x D65mm
+        材質：棉 ， 尼龍
+        商品紹介：
+        出自 TV 卡通「我的英雄學院」，【風和子凜 2】登場！
+        一個完美的圓形和蓬鬆的變形吉祥物！ </p>
+        <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/11.jpg" class="w3-image" style="height:50%;weight:50%;">
+    </div>
+    <footer class="w3-container w3-blue-gray d-flex ">
+      <p>價格：666元</p>
+      <button onclick="addItemToKart('我的英雄學院 / 風和語林 2 風鈴木','666')">新增至購物車</button>
+    </footer>
+  </div>
+</div>
+
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/04.jpg" style="width:100%;height:350px">
+  <div class="w3-container w3-center w3-blue-gray">
+    <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">轟焦凍<i class="fa-solid fa-circle-info"></i></button>
+  </div>
+  </div>
+</div>
+
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-blue-gray w3-display-container"> 
+      <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>我的英雄學院 / 不倒狼凜 BIG2 </h4>
+    </header>
+    <div class="w3-container w3-gray">
+      <p>發布日期：2022 年 3 月
+        商品尺寸：全長約30cm
+        材質：棉 ， 尼龍
+        產品介紹：
+        TV 卡通「我的英雄學院」出自【風和子凜 BIG2】登場！
+        毛茸茸的變形大毛絨玩具！</p>
+        <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/04.jpg" class="w3-image" style="height:50%;weight:50%;">
+    </div>
+    <footer class="w3-container w3-blue-gray">
+      <p>價格:777</p>
+      <button onclick="addItemToKart('我的英雄學院 / 不倒狼凜 BIG2 ','777')">新增至購物車</button>
+    </footer>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/05.jpg" style="width:100%;height:350px">
+  <div class="w3-container w3-center w3-blue-gray">
+    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">轟焦凍<i class="fa-solid fa-circle-info"></i></button>
+  </div>
+  </div>
+</div>
+
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-blue-gray w3-display-container"> 
+      <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>我的英雄學院 / Fuwakoro Rin Special BOX 購買特典</h4>
+    </header>
+    <div class="w3-container w3-gray">
+      <p>發布日期：2022 年 5 月
+        產品尺寸：
+        關於 H90×W80×D65mm
+        材質：棉 ， 尼龍
+        產品介紹：
+        出自 TV 動畫「我的英雄學院」，【風和子凜特別版】登場！
+        一個完美的圓形和蓬鬆的變形吉祥物！ 
+        </p>
+        <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/05.jpg" class="w3-image" style="height:50%;weight:50%;">
+    </div>
+    <footer class="w3-container w3-blue-gray">
+      <p>價格:888</p>
+      <button onclick="addItemToKart('我的英雄學院 / Fuwakoro Rin Special BOX 購買特典','888')">新增至購物車</button>
+    </footer>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+<!-- 商品列 2-->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1 w3-bottombar w3-border-dark-gray" id="work2">
+
+  <div class="w3-quarter">
+  <h2>手機殼</h2>
+  
+  </div>
+  
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/06.jpg" style="width:100%;height:350px">
+    <div class="w3-container w3-center w3-blue-gray">
+      <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">泰劇主題手機殼<i class="fa-solid fa-circle-info"></i></button>
+    </div>
+    </div>
+  </div>
+
+  <div id="id04" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-blue-gray w3-display-container"> 
+        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>泰劇主題手機殼</h4>
+      </header>
+      <div class="w3-container w3-gray">
+        <p>型號: iPhone 12</p>
+        <button onclick="addItemToKart('泰劇主題手機殼','555')">新增至購物車</button>
+      </div>
+      <footer class="w3-container w3-blue-gray">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+  
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/07.jpg" style="width:100%;height:350px">
+    <div class="w3-container w3-center w3-blue-gray">
+      <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">透明手機殼<i class="fa-solid fa-circle-info"></i></button>
+    </div>
+    </div>
+  </div>
+
+  <div id="id05" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-blue-gray w3-display-container"> 
+        <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>以你的心詮釋我的愛 透明手機殼</h4>
+      </header>
+      <div class="w3-container w3-gray">
+        <p>型號: iPhone 12</p>
+        <button onclick="addItemToKart('透明手機殼','333')">新增至購物車</button>
+      </div>
+      <footer class="w3-container w3-blue-gray">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+  
+  
+
+
+
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/12.jpg" style="width:100%;height:350px">
+    <div class="w3-container w3-center w3-blue-gray">
+      <button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">造型手機殼<i class="fa-solid fa-circle-info"></i></button>
+    </div>
+    </div>
+  </div>
+  
+
+  <div id="id06" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-blue-gray w3-display-container"> 
+        <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>雲朵隱形支架手機殼</h4>
+      </header>
+      <div class="w3-container w3-gray">
+        <p>型號: iPhone 12</p>
+        <button onclick="addItemToKart('雲朵隱形支架手機殼','555')">新增至購物車</button>
+      </div>
+      <footer class="w3-container w3-blue-gray">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+<!-- 商品列3-->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1 w3-bottombar w3-border-dark-gray" id="work3">
+
+  <div class="w3-quarter">
+  <h2>機械鍵盤</h2>
+  
+  </div>
+  
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/08.jpg" style="width:100%;height:350px">
+    <div class="w3-container w3-center w3-blue-gray">
+      <button onclick="document.getElementById('id07').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">套件<i class="fa-solid fa-circle-info"></i></button>
+    </div>
+    </div>
+  </div>
+
+  <div id="id07" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-blue-gray w3-display-container"> 
+        <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>腹靈mk870</h4>
+      </header>
+      <div class="w3-container w3-gray">
+        
+        <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/14.jpg" class="w3-image" style="height:50%;weight:50%;">
+      </div>
+      <footer class="w3-container w3-blue-gray">
+        <p>價格:3333</p>
+        <button onclick="addItemToKart('腹靈mk870','555')">新增至購物車</button>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+  
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/09.jpg" style="width:100%;height:350px">
+    <div class="w3-container w3-center w3-blue-gray">
+      <button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">軸承<i class="fa-solid fa-circle-info"></i></button>
+    </div>
+    </div>
+  </div>
+
+  <div id="id08" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-blue-gray w3-display-container"> 
+        <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>復古白軸</h4>
+      </header>
+      <div class="w3-container w3-gray">
+        <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/13.jpg" class="w3-image" style="height:50%;weight:50%;">
+      </div>
+      <footer class="w3-container w3-blue-gray">
+        <p>價格:8元/1個
+        </p>
+        <button onclick="addItemToKart('復古白軸','8')">新增至購物車</button>
+      </footer>
+    </div>
+  </div>
+  
+  
+
+
+
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/10.jpg" style="width:100%;height:350px">
+    <div class="w3-container w3-center w3-blue-gray">
+      <button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-xlarge  w3-hover-dark-gray ">鍵帽<i class="fa-solid fa-circle-info"></i></button>
+    </div>
+    </div>
+  </div>
+  
+
+  <div id="id09" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-blue-gray w3-display-container"> 
+        <span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-blue-gray w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>PBT 天氣主題鍵帽</h4>
+      </header>
+      <div class="w3-container w3-gray">
+        <p>規格:XDA高度 
+           材質:PBT熱昇華</p>
+      </div>
+      <footer class="w3-container w3-blue-gray">
+        <p>價格:485元/組</p>
+        <button onclick="addItemToKart('PBT 天氣主題鍵帽','485')">新增至購物車</button>
+      </footer>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+<!-- 底圖 -->
+<img src="https://raw.githubusercontent.com/zichi77777/chi725/main/webpage/picture/01.png" class="w3-image" style="width:100%">
+
+<!--頁腳-->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <center>
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/profile.php?id=100025347829208" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/imyinling/?hl=zh-tw" title="instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://zichi77777.github.io/chi725/" title="instagram"><i class="fa-brands fa-github"></i></a>
+  
+</center>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
